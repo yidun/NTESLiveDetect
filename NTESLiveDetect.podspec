@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NTESLiveDetect"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "NTESLiveDetect."
 
   # This description is used to generate tags and improve search results.
@@ -120,9 +120,7 @@ Pod::Spec.new do |spec|
 
   spec.vendored_frameworks = ["Classes/MNN.framework","Classes/opencv2.framework","Classes/NTESLiveDetect.framework"]
   
-  spec.resource_bundles = {
-       'NTESLiveDetect' => ['Assets/NTESLiveDetectBundle.bundle']
-   }
+  spec.resource = "Assets/NTESLiveDetectBundle.bundle"
    
   #spec.libraries = "c++.1"
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
