@@ -37,6 +37,19 @@ typedef NS_ENUM(NSUInteger, NTESLDStatus) {
     NTESLDCameraNotAvailable,
 };
 
+/**
+*  @abstract    动作检测灵敏度枚举
+*
+*               NTESSensitEasy            动作检测容易通过
+*               NTESSensitNormal         动作检测默认状态
+*               NTESSensitHard             动作检测不容易通过
+*/
+typedef NS_ENUM(NSUInteger, NTESSensit) {
+    NTESSensitEasy = 0,
+    NTESSensitNormal,
+    NTESSensitHard,
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -65,13 +78,15 @@ extern NSString * _Nonnull const NTESLDNotificationStatusChange;
  初始化检测对象
  
  @param imageView               传入放置检测活体的imageView对象，imageView宽高比需设定为3:4
+ @param sensit                      请传入活体检灵敏度类型。
  */
-- (instancetype)initWithImageView:(UIImageView *)imageView;
+- (instancetype)initWithImageView:(UIImageView *)imageView
+                 withDetectSensit:(NTESSensit)sensit;
 
 /**
  设置活体检测的超时时间
  
- @param timeout                 请传入10-30范围内的时间值，默认15，单位s
+ @param timeout                 请传入10-120范围内的时间值，默认30，单位s
  */
 - (void)setTimeoutInterval:(NSTimeInterval)timeout;
 
@@ -82,7 +97,9 @@ extern NSString * _Nonnull const NTESLDNotificationStatusChange;
  @param actionsHandler          活体检测动作序列号的回调
  @param completionHandler       活体检测结果的回调，结果状态见NTESLDStatus枚举类型
  */
-- (void)startLiveDetectWithBusinessID:(NSString *)businessID actionsHandler:(NTESLDAcitionsHandler)actionsHandler completionHandler:(NTESLDCompletionHandler)completionHandler;
+- (void)startLiveDetectWithBusinessID:(NSString *)businessID
+                       actionsHandler:(NTESLDAcitionsHandler)actionsHandler
+                    completionHandler:(NTESLDCompletionHandler)completionHandler;
 
 /**
  停止活体检测                     ⚠️ 请在主线程中调用
