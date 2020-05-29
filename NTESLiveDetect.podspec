@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "NTESLiveDetect"
   spec.version      = "2.1.0"
-  spec.summary      = "NTESLiveDetects.2.1.0"
+  spec.summary      = "NTESLiveDetects."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
