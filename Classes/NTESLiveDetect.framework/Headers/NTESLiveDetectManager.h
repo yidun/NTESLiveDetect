@@ -65,10 +65,12 @@ typedef void(^NTESLDAcitionsHandler)(NSDictionary *params);
 
 /**
  @说明        动作检测监听，可在App内做相应提示
-             使用[notification.userInfo objectForKey:@"info"]获取当前动作状态，NSDictionary类型
+             动作检测的数据结构：@{@"action" : @{1 : YES}}  或者 @{@"exception" : @"1"}  二者只可能出现其中之一。
+             使用[notification.userInfo objectForKey:@"action"]获取当前动作状态，NSDictionary类型
              key:当前执行的动作状态 0——正面，1——右转，2——左转，3——张嘴，4——眨眼, -1——未检测到完整人脸
              value:对应动作的完成状态 NO——未完成 YES——已完成
- 
+             使用NSString *exception =  [notification.userInfo objectForKey:@"exception"]获取异常，NSString类型
+             exception:当前的异常状态 1——保持面部在框内，2——环境光线过暗，3——环境光线过亮，4——请勿抖动手机
  */
 extern NSString * _Nonnull const NTESLDNotificationStatusChange;
 
