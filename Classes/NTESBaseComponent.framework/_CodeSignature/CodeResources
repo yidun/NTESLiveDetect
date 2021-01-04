@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/NTESBaseComponent.h</key>
 		<data>
-		V0C0oCBldCL3mKe2ZA28Zxs1MIU=
+		ctxfiqLJbMMLAsl+PE7nagXOpVU=
 		</data>
 		<key>Headers/NTESBaseCrashManager.h</key>
 		<data>
-		pJUDdRCLzDXMCJiEzA+D4PWC9X0=
+		oU4PKt1whe3kubriNsovd2AlOxQ=
 		</data>
 		<key>Headers/NTESBaseHttpRequest.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lSXqd+eLmHEQuXZJpYrX5zs1IcE=
+		rTPXIXo0nrdN2TROm2qrpnB41cU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,22 +35,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			V0C0oCBldCL3mKe2ZA28Zxs1MIU=
+			ctxfiqLJbMMLAsl+PE7nagXOpVU=
 			</data>
 			<key>hash2</key>
 			<data>
-			XL9BktP2iLb27XeHFa297w/h5WGY3uAZ6APgznWULRg=
+			+SVyBZBXvxI1MNPpPLGeziGPN1McRgtqMkfEKcBqNn0=
 			</data>
 		</dict>
 		<key>Headers/NTESBaseCrashManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pJUDdRCLzDXMCJiEzA+D4PWC9X0=
+			oU4PKt1whe3kubriNsovd2AlOxQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vQMTVJQ/4C3nUFSjIpxjXSVynsU9e+KE9IDYm6yElZo=
+			h8FqL0tUDQljasSGxiuy46r41FtFf6rrizwHhgMu7fE=
 			</data>
 		</dict>
 		<key>Headers/NTESBaseHttpRequest.h</key>
