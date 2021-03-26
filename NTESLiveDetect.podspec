@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NTESLiveDetect"
-  spec.version      = "2.2.5"
+  spec.version      = "2.2.6.beta"
   spec.summary      = "NTESLiveDetects."
 
   # This description is used to generate tags and improve search results.
@@ -118,7 +118,7 @@ Pod::Spec.new do |spec|
   # spec.framework  = "SomeFramework"
   spec.frameworks = "AssetsLibrary", "AVFoundation", "CoreData", "CoreMedia"
 
-  spec.vendored_frameworks = ["Classes/MNN.framework","Classes/opencv2.framework","Classes/NTESLiveDetect.framework","Classes/NTESBaseComponent.framework","Classes/NTESFaceARDetect.framework"]
+  spec.vendored_frameworks = ["Classes/MNN.framework","Classes/opencv2.framework","Classes/NTESLiveDetect.framework","Classes/NTESFaceARDetect.framework"]
   
   spec.resource = "Assets/NTESLiveDetectBundle.bundle"
    
@@ -132,6 +132,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "NTESBaseComponent", "1.1"
 
 end
