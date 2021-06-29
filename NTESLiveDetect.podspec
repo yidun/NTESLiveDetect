@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NTESLiveDetect"
-  spec.version      = "2.2.9"
+  spec.version      = "3.0.0.beta"
   spec.summary      = "NTESLiveDetects."
 
   # This description is used to generate tags and improve search results.
@@ -133,6 +133,5 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency "NTESBaseComponent"
-  spec.dependency "NTESARCommonSDK"
 
 end

@@ -6,6 +6,3 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NTESFaceARDetectIOS.h"
-
-
