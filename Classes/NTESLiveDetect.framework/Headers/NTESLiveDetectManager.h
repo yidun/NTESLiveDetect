@@ -23,6 +23,8 @@
  *               NTESLDNonGateway           网络未连接
  *               NTESLDSDKError             SDK内部发生错误
  *               NTESLDCameraNotAvailable   App未获取相机权限
+ *               NTESLDCheckingOnline  正在进行云端检测
+ *
  *
  */
 typedef NS_ENUM(NSUInteger, NTESLDStatus) {
@@ -35,6 +37,7 @@ typedef NS_ENUM(NSUInteger, NTESLDStatus) {
     NTESLDNonGateway,
     NTESLDSDKError,
     NTESLDCameraNotAvailable,
+    NTESLDCheckingOnline,
 };
 
 /**
