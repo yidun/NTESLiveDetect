@@ -23,7 +23,6 @@
  *               NTESLDNonGateway           网络未连接
  *               NTESLDSDKError             SDK内部发生错误
  *               NTESLDCameraNotAvailable   App未获取相机权限
- *               NTESLDCheckingOnline  正在进行云端检测
  *
  *
  */
@@ -37,7 +36,6 @@ typedef NS_ENUM(NSUInteger, NTESLDStatus) {
     NTESLDNonGateway,
     NTESLDSDKError,
     NTESLDCameraNotAvailable,
-    NTESLDCheckingOnline,
 };
 
 /**
@@ -67,6 +65,12 @@ typedef void(^NTESLDCompletionHandler)(NTESLDStatus status, NSDictionary * _Null
              动作状态表示：0——正面，1——右转，2——左转，3——张嘴，4——眨眼
  */
 typedef void(^NTESLDAcitionsHandler)(NSDictionary *params);
+
+/**
+ @说明        正在进行云端检测
+ */
+typedef void(^ __nullable NTESLDCheckingHandler)(void);
+
 
 /**
  @说明        动作检测监听，可在App内做相应提示
@@ -102,10 +106,12 @@ extern NSString * _Nonnull const NTESLDNotificationStatusChange;
  
  @param businessID              产品编号
  @param actionsHandler          活体检测动作序列号的回调
+ @param checkingHandler          活体检测正在进行云端检测的回调
  @param completionHandler       活体检测结果的回调，结果状态见NTESLDStatus枚举类型
  */
 - (void)startLiveDetectWithBusinessID:(NSString *)businessID
                        actionsHandler:(NTESLDAcitionsHandler)actionsHandler
+                      checkingHandler:(NTESLDCheckingHandler)checkingHandler
                     completionHandler:(NTESLDCompletionHandler)completionHandler;
 
 /**
