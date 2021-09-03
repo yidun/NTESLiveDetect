@@ -115,6 +115,21 @@ extern NSString * _Nonnull const NTESLDNotificationStatusChange;
                     completionHandler:(NTESLDCompletionHandler)completionHandler;
 
 /**
+ 开始活体检测
+ 
+ @param businessID              产品编号
+ @param configURL                   URL 域名集合，可传多个域名，实现域名的重试机制(例如：先使用第一个域名，如果第一个域名失败，就取第二个域名以此类推)，若传nil，使用默认值
+ @param actionsHandler          活体检测动作序列号的回调
+ @param checkingHandler          活体检测正在进行云端检测的回调
+ @param completionHandler       活体检测结果的回调，结果状态见NTESLDStatus枚举类型
+ */
+- (void)startLiveDetectWithBusinessID:(NSString *)businessID
+                            configURL:(NSArray<NSString *> * _Nullable)configURL
+                       actionsHandler:(NTESLDAcitionsHandler)actionsHandler
+                      checkingHandler:(NTESLDCheckingHandler)checkingHandler
+                    completionHandler:(NTESLDCompletionHandler)completionHandler;
+
+/**
  停止活体检测                     ⚠️ 请在主线程中调用
  
  @abstract                      调用时机：
