@@ -32,7 +32,8 @@
         saved_image_path__:(std::string)saved_image_path
         detect_exception__:(bool &)detect_exception
               imgWidth__:(int)imgWidth
-             imgHeight__:(int)imgHeight;
+             imgHeight__:(int)imgHeight
+             degrade__:(bool)bDegrade;
 
 - (id)initWithSensitivityType:(int)type;
 
