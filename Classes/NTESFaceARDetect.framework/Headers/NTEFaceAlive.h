@@ -15,13 +15,15 @@
 #include <sstream>
 
 #include <stdio.h>
+class livenessDetect;
 
 /**
-  v1.0 20211207
+  v1.1 20220407
  */
 
 
 @interface FaceARDetectIOS : NSObject
+
 
 - (BOOL)reset_FaceAR;
 
