@@ -15,10 +15,9 @@
 #include <sstream>
 
 #include <stdio.h>
-class livenessDetect;
 
 /**
-  v1.1 20220407
+  v1.2 20220422
  */
 
 
