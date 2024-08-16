@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NTESLiveDetect"
-  spec.version      = "3.2.4"
+  spec.version      = '3.2.6'
   spec.summary      = "NTESLiveDetects."
 
   # This description is used to generate tags and improve search results.
@@ -119,14 +119,14 @@ Pod::Spec.new do |spec|
   spec.frameworks = "AssetsLibrary", "AVFoundation", "CoreData", "CoreMedia"
 
   spec.subspec 'Basic' do |basic|
-      basic.vendored_frameworks = 'Basic/NTESLiveDetect.framework','Basic/NTESFaceARDetect.framework'
+      basic.vendored_frameworks = 'Basic/NTESLiveDetect.xcframework','Basic/NTESFaceARDetect.xcframework', 'Basic/NTESBaseComponent.xcframework'
   end
 
   spec.subspec 'Nenn' do |nenn|
-      nenn.vendored_frameworks = 'Nenn/NEYDnn.framework'
+      nenn.vendored_frameworks = 'Nenn/NEYDnn.xcframework'
   end
   
-  spec.resource = "Assets/NTESLiveDetectBundle.bundle"
+  spec.resource = "Assets/NTESLiveDetectBundle.bundle", "Assets/RiskPerceptionBundle.bundle"
    
   #spec.libraries = "c++.1"
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

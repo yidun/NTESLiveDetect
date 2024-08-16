@@ -1,0 +1,6 @@
+framework module NTESFaceARDetect {
+  umbrella header "NTESFaceARDetect.h"
+
+  export *
+  module * { export * }
+}
