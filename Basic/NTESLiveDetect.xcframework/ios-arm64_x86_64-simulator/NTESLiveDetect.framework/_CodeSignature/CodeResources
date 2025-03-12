@@ -42,7 +42,7 @@
 		</data>
 		<key>Frameworks/NTESFaceARDetect.framework/Info.plist</key>
 		<data>
-		ycr4+7SFbuavCU8Sv8tS5zhbJhg=
+		hdD2uUJUjMvhDcOIwmZ002yN17k=
 		</data>
 		<key>Frameworks/NTESFaceARDetect.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Frameworks/NTESFaceARDetect.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		gS/MTSQV+2ukvlHs12O8o9pRv+g=
+		98SgxA7a3TBx4TzZmHRufUidzDg=
 		</data>
 		<key>Frameworks/NTESFaceARDetect.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Frameworks/NTESFaceARDetect.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		U681iBKel4wp/aZH+K/TS0MUxMo=
+		62EabmihWj9c5OD2arX2CX3RbHA=
 		</data>
 		<key>Frameworks/NTESFaceARDetect.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Headers/NTESLiveDetectManager.h</key>
 		<data>
-		kcsZTfcmQtYmKGW4K5lAuUzM0OI=
+		6KDz5RZeMSGDw38BBEg/T13HVQw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zYZBxxP61obbV2bEfY8Ei17SPI8=
+		KzG6CxCKW8shyTAlxj8lmHV9LzU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -190,11 +190,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ycr4+7SFbuavCU8Sv8tS5zhbJhg=
+			hdD2uUJUjMvhDcOIwmZ002yN17k=
 			</data>
 			<key>hash2</key>
 			<data>
-			yQ2nQkfHbsDpyKDfD1xJEU58B5uqRiN9z1Gm1NtM2Dc=
+			jjhJfiZj3QWpLuJsLhVdR6i4iq8txfiB1pCBCr0aYZI=
 			</data>
 		</dict>
 		<key>Frameworks/NTESFaceARDetect.framework/PrivacyInfo.xcprivacy</key>
@@ -212,11 +212,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gS/MTSQV+2ukvlHs12O8o9pRv+g=
+			98SgxA7a3TBx4TzZmHRufUidzDg=
 			</data>
 			<key>hash2</key>
 			<data>
-			2KVDqeAT+1fRKa/+B+wavEgZWPoI9Aq/TI7R1rsbszY=
+			K3NV6CidrnCVErSDLlDYbzrGEoHTVSelmKAH3XP9Gyo=
 			</data>
 		</dict>
 		<key>Frameworks/NTESFaceARDetect.framework/_CodeSignature/CodeRequirements</key>
@@ -234,11 +234,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U681iBKel4wp/aZH+K/TS0MUxMo=
+			62EabmihWj9c5OD2arX2CX3RbHA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ARypQuzGdDy1k4+lMylcLOOZJT7Sy65vths5k4lowx4=
+			7NzTS84P6VZo1GiNMUNgai0Y+S0o2FIhHNTr/0Fb6uE=
 			</data>
 		</dict>
 		<key>Frameworks/NTESFaceARDetect.framework/_CodeSignature/CodeResources</key>
@@ -278,11 +278,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kcsZTfcmQtYmKGW4K5lAuUzM0OI=
+			6KDz5RZeMSGDw38BBEg/T13HVQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			3+NughfjbrtigJkeA8Z0xkCAtABIq6nmhki7Af2DgZQ=
+			iwOb7GJGkcY95B/oVfiNq51B9oEhuWHY+IG1mh+GkoY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

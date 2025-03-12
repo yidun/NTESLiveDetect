@@ -117,6 +117,18 @@ extern NSString * _Nonnull const NTESLDNotificationStatusChange;
 - (void)setAllowMultipleFace:(BOOL)allowMultipleFace;
 
 /**
+ 设置人脸占比最小值
+ @param minFacePercentage 默认 7, 人脸占比最小值：0~100
+ */
+- (void)setMinFacePercentage:(NSUInteger)minFacePercentage;
+
+/**
+ 设置人脸占比最大值
+ @param maxFacePercentage 默认  60, 人脸占比最大值：0~100
+ */
+- (void)setMaxFacePercentage:(NSUInteger)maxFacePercentage;
+
+/**
  开始活体检测
  
  @param businessID              产品编号
