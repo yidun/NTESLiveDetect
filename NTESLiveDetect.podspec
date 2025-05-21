@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NTESLiveDetect"
-  spec.version      = '3.2.9'
+  spec.version      = '3.2.10.beta'
   spec.summary      = "NTESLiveDetects."
 
   # This description is used to generate tags and improve search results.
@@ -127,6 +127,10 @@ Pod::Spec.new do |spec|
   end
   
   spec.resource = "Assets/NTESLiveDetectBundle.bundle", "Assets/RiskPerceptionBundle.bundle"
+
+  spec.pod_target_xcconfig = { 
+    'OTHER_LDFLAGS' => '-fprofile-instr-generate'
+  }
    
   #spec.libraries = "c++.1"
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
