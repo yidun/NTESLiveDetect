@@ -73,6 +73,8 @@ face_detection_success__:(bool &)face_detection_success
 
 - (id)initWithSensitivityType:(int)type;
 
+- (id)initWithSensitivityType:(int)type bundlePath:(std::string)bundlePath;
+
 
 - (NSString *)getSDKVersion;
 

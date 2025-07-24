@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/NTEFaceAlive.h</key>
 		<data>
-		uJFS3ZsIFvdKtlQkQnWIxLAcDW0=
+		j/Z8NhQ9R0VKfitZUkU/Y/dRcqk=
 		</data>
 		<key>Headers/NTESFaceARDetect.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hdD2uUJUjMvhDcOIwmZ002yN17k=
+		Klxr5GQeluXQTUdk0QTqbQjHa2o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,11 +31,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uJFS3ZsIFvdKtlQkQnWIxLAcDW0=
+			j/Z8NhQ9R0VKfitZUkU/Y/dRcqk=
 			</data>
 			<key>hash2</key>
 			<data>
-			iW0GU99Jo3sVN7KWnPIRDU7tJ+l9SSSEusyjK1m+bQ8=
+			ByoTbc6+W9npiAgXksQUMQ5KSmnFMLrJHcVwE4PfZdU=
 			</data>
 		</dict>
 		<key>Headers/NTESFaceARDetect.h</key>

@@ -64,7 +64,7 @@ typedef void(^NTESLDCompletionHandler)(NTESLDStatus status, NSDictionary * _Null
 
 /**
  @说明        返回所有动作的序列码
-             动作状态表示：0——正面，1——右转，2——左转，3——张嘴，4——眨眼
+ 动作状态表示：0——正面，1——右转，2——左转，3——张嘴，4——眨眼
  */
 typedef void(^NTESLDAcitionsHandler)(NSDictionary *params);
 
@@ -76,12 +76,12 @@ typedef void(^ __nullable NTESLDCheckingHandler)(void);
 
 /**
  @说明        动作检测监听，可在App内做相应提示
-             动作检测的数据结构：@{@"action" : @{1 : YES}}  或者 @{@"exception" : @"1"}  二者只可能出现其中之一。
-             使用[notification.userInfo objectForKey:@"action"]获取当前动作状态，NSDictionary类型
-             key:当前执行的动作状态 0——正面，1——右转，2——左转，3——张嘴，4——眨眼, -1——未检测到完整人脸
-             value:对应动作的完成状态 NO——未完成 YES——已完成
-             使用NSString *exception =  [notification.userInfo objectForKey:@"exception"]获取异常，NSString类型
-             exception:当前的异常状态 1——保持面部在框内，2——环境光线过暗，3——环境光线过亮，4——请勿抖动手机，5 —— 多人脸
+ 动作检测的数据结构：@{@"action" : @{1 : YES}}  或者 @{@"exception" : @"1"}  二者只可能出现其中之一。
+ 使用[notification.userInfo objectForKey:@"action"]获取当前动作状态，NSDictionary类型
+ key:当前执行的动作状态 0——正面，1——右转，2——左转，3——张嘴，4——眨眼, -1——未检测到完整人脸
+ value:对应动作的完成状态 NO——未完成 YES——已完成
+ 使用NSString *exception =  [notification.userInfo objectForKey:@"exception"]获取异常，NSString类型
+ exception:当前的异常状态 1——保持面部在框内，2——环境光线过暗，3——环境光线过亮，4——请勿抖动手机，5 —— 多人脸，6 —— 距离过远，7 —— 距离过近
  */
 extern NSString * _Nonnull const NTESLDNotificationStatusChange;
 
@@ -94,6 +94,18 @@ extern NSString * _Nonnull const NTESLDNotificationStatusChange;
  @param sensit                      请传入活体检灵敏度类型。
  */
 - (instancetype)initWithImageView:(UIImageView *)imageView
+                 withDetectSensit:(NTESSensit)sensit;
+
+/**
+ 初始化检测对象
+ 
+ @param imageView                       传入放置检测活体的imageView对象，imageView宽高比需设定为3:4
+ @param sensit                              请传入活体检测灵敏度类型。
+ @param detectBundlePath        请传入活体检测资源文件路径。
+
+ */
+- (instancetype)initWithImageView:(UIImageView *)imageView
+             withDetectBundlePath:(NSString *)detectBundlePath
                  withDetectSensit:(NTESSensit)sensit;
 
 /**
@@ -159,9 +171,10 @@ extern NSString * _Nonnull const NTESLDNotificationStatusChange;
 /**
  停止活体检测                     ⚠️ 请在主线程中调用
  
- @abstract                      调用时机：
-                                1、在活体检测结果的回调里（NTESLDCompletionHandler）调用
-                                2、未完成活体检测，需要中止时调用
+ @abstract
+ 调用时机：
+ 1、在活体检测结果的回调里（NTESLDCompletionHandler）调用
+ 2、未完成活体检测，需要中止时调用
  */
 - (void)stopLiveDetect;
 
